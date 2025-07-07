@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | TITANIUM</title>
+    <meta name="description" content="Explora la fascinante historia del tatuaje y el piercing en el blog de TITANIUM. Descubre los orígenes y significados de este arte ancestral.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #121212; color: #e0e0e0; }
+        .nav-link { @apply text-gray-300 hover:text-white transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium; }
+        .section-title { @apply text-4xl font-bold text-center mb-12 text-white; }
+        .card { @apply bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300; }
+    </style>
+</head>
+<body class="antialiased">
 
+    <!-- HEADER -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-white">TITANIUM</a>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+                    <a href="blog.html" class="nav-link bg-gray-700 text-white">Blog</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white" aria-label="Abrir menú">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="index.html" class="block nav-link text-center">Inicio</a>
+                <a href="sobre-nosotros.html" class="block nav-link text-center">Sobre Nosotros</a>
+                <a href="blog.html" class="block nav-link text-center bg-gray-700 text-white">Blog</a>
+                <a href="faq.html" class="block nav-link text-center">FAQ</a>
+                <a href="contacto.html" class="block nav-link text-center">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            <h1 class="section-title">Historia del Arte Corporal</h1>
+            <div class="max-w-4xl mx-auto space-y-12">
+                <article class="card">
+                    <h3 class="text-2xl font-bold mb-4 text-white">El Origen Milenario del Tatuaje</h3>
+                    <p class="text-gray-300 leading-relaxed">El tatuaje es una de las formas de arte más antiguas de la humanidad. La evidencia más antigua conocida se encontró en Ötzi, el "Hombre de Hielo", cuya momia de 5300 años de antigüedad presentaba más de 60 tatuajes. A lo largo de la historia, los tatuajes han servido como amuletos, símbolos de estatus, declaraciones de amor, signos de creencias religiosas, adornos e incluso como formas de castigo. En Polinesia, el arte del 'tatau' era un rito sagrado que indicaba la genealogía y el estatus social. En Japón, el 'irezumi' se desarrolló como una forma de arte decorativo de cuerpo completo, a menudo asociado con los samuráis y, más tarde, con la yakuza. El resurgimiento moderno en Occidente comenzó con los marineros en el siglo XVIII y ha evolucionado hasta convertirse en la forma de expresión personal universal que conocemos hoy.</p>
+                </article>
+                <article class="card">
+                    <h3 class="text-2xl font-bold mb-4 text-white">El Piercing: Más que un Adorno</h3>
+                    <p class="text-gray-300 leading-relaxed">Al igual que los tatuajes, las perforaciones corporales tienen raíces ancestrales. Se han practicado en casi todas las culturas del mundo por diversas razones. Desde los faraones egipcios que se perforaban el ombligo como rito de realeza, hasta los guerreros romanos que usaban piercings en los pezones como señal de virilidad y para sujetar sus capas. En las culturas tribales de África y América del Sur, los piercings en labios y orejas, a menudo dilatados, simbolizaban la belleza y la madurez. Hoy en día, el piercing ha sido adoptado por la cultura mainstream como una poderosa forma de autoexpresión, individualidad y estética personal, lejos de sus significados rituales originales pero manteniendo su poder como declaración de identidad.</p>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <div class="mt-8 pt-8 border-t border-gray-700 text-sm">
+                <a href="#" class="hover:text-white underline">Política de Privacidad</a> |
+                <a href="#" class="hover:text-white underline">Aviso Legal</a> |
+                <a href="#" class="hover:text-white underline">Política de Cookies</a>
+                <p class="mt-4">&copy; <span id="year"></span> TITANIUM. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
