@@ -1,573 +1,234 @@
 <!DOCTYPE html>
-
 <html lang="es" class="scroll-smooth">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>TITANIUM - Estudio de Tatuajes Profesional en Deusto, Bilbao</title>
+    <meta name="description" content="Estudio de tatuajes profesional en Deusto, Bilbao. Especialistas en tatuajes para antebrazo, brazo (hombre y mujer), cuello y diseños con significado. Artistas: Albena, Lina e Iker.">
+    <meta name="keywords" content="tatuajes antebrazo, tatuajes antebrazo hombre, tatuajes brazo hombre, tatuajes brazo mujer, tatuajes cuello, tatuajes con significado, estudio de tatuajes bilbao, tatuador bilbao, piercing bilbao, TITANIUM">
+    <meta name="author" content="TITANIUM">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.tu-url-aqui.com/">
 
-    <meta charset="UTF-8">
+    <!-- Open Graph Meta Tags (para redes sociales) -->
+    <meta property="og:title" content="TITANIUM - Estudio de Tatuajes Profesional en Bilbao">
+    <meta property="og:description" content="Descubre nuestro arte. Tatuajes únicos y personalizados en el corazón de Deusto, Bilbao.">
+    <meta property="og:image" content="https://placehold.co/1200x630/1a1a1a/ffffff?text=TITANIUM+Tattoo">
+    <meta property="og:url" content="https://www.tu-url-aqui.com/">
+    <meta property="og:type" content="website">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 
-   
-
-    <!-- SEO Meta Tags -->
-
-    <title>Estudio de Tatuajes en Bilbao | Tatuajes Antebrazo, Brazo y Cuello</title>
-
-    <meta name="description" content="Estudio de tatuajes profesional en Deusto, Bilbao. Especialistas en tatuajes para antebrazo, brazo (hombre y mujer), cuello y diseños con significado. Artistas: Albena, Lina e Iker.">
-
-    <meta name="keywords" content="tatuajes antebrazo, tatuajes antebrazo hombre, tatuajes brazo hombre, tatuajes brazo mujer, tatuajes cuello, tatuajes con significado, estudio de tatuajes bilbao, tatuador bilbao, piercing bilbao">
-
-    <meta name="author" content="Tu Nombre/Nombre del Estudio">
-
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical" href="https://www.tu-url-aqui.com/">
-
-
-
-    <!-- Open Graph Meta Tags (para redes sociales) -->
-
-    <meta property="og:title" content="Estudio de Tatuajes Profesional en Bilbao">
-
-    <meta property="og:description" content="Descubre nuestro arte. Tatuajes únicos y personalizados en el corazón de Deusto, Bilbao.">
-
-    <meta property="og:image" content="https://placehold.co/1200x630/1a1a1a/ffffff?text=Estudio+Tatuajes+Bilbao">
-
-    <meta property="og:url" content="https://www.tu-url-aqui.com/">
-
-    <meta property="og:type" content="website">
-
-
-
-    <!-- Tailwind CSS -->
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-   
-
-    <!-- Google Fonts -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-
-
-
-    <!-- Estilos personalizados -->
-
-    <style>
-
-        body {
-
-            font-family: 'Inter', sans-serif;
-
-            background-color: #121212; /* Fondo oscuro principal */
-
-            color: #e0e0e0;
-
-        }
-
-        .nav-link {
-
-            @apply text-gray-300 hover:text-white transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium;
-
-        }
-
-        .section-title {
-
-            @apply text-4xl font-bold text-center mb-12 text-white;
-
-        }
-
-        .card {
-
-            @apply bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
-
-        }
-
-    </style>
-
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212; /* Fondo oscuro principal */
+            color: #e0e0e0;
+        }
+        .nav-link {
+            @apply text-gray-300 hover:text-white transition-colors duration-300 px-3 py-2 rounded-md text-sm font-medium;
+        }
+        .section-title {
+            @apply text-4xl font-bold text-center mb-12 text-white;
+        }
+        .card {
+            @apply bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+        }
+        #cookie-banner {
+            transition: transform 0.5s ease-in-out;
+        }
+        .chat-bubble {
+            animation: wave 2s infinite;
+        }
+        @keyframes wave {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+    </style>
 </head>
-
 <body class="antialiased">
 
-
-
-    <!-- HEADER -->
-
-    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
-
-        <nav class="container mx-auto px-6 py-3">
-
-            <div class="flex items-center justify-between">
-
-                <a href="#inicio" class="text-2xl font-bold text-white">Tattoo Ink Bilbao</a>
-
-               
-
-                <!-- Navegación para escritorio -->
-
-                <div class="hidden md:flex items-center space-x-4">
-
-                    <a href="#inicio" class="nav-link">Inicio</a>
-
-                    <a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a>
-
-                    <a href="#blog" class="nav-link">Blog</a>
-
-                    <a href="#faq" class="nav-link">FAQ</a>
-
-                    <a href="#contacto" class="nav-link">Contacto</a>
-
-                </div>
-
-
-
-                <!-- Iconos -->
-
-                <div class="flex items-center space-x-4">
-
-                    <button aria-label="Buscar" class="text-gray-300 hover:text-white">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-
-                    </button>
-
-                    <button aria-label="Cesta de la compra" class="text-gray-300 hover:text-white">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-
-                    </button>
-
-                    <button aria-label="Iniciar sesión" class="text-gray-300 hover:text-white">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-
-                    </button>
-
-                    <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white" aria-label="Abrir menú">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-
-                        </svg>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-            <!-- Menú para móvil -->
-
-            <div id="mobile-menu" class="hidden md:hidden mt-4">
-
-                <a href="#inicio" class="block nav-link text-center">Inicio</a>
-
-                <a href="#sobre-nosotros" class="block nav-link text-center">Sobre Nosotros</a>
-
-                <a href="#blog" class="block nav-link text-center">Blog</a>
-
-                <a href="#faq" class="block nav-link text-center">FAQ</a>
-
-                <a href="#contacto" class="block nav-link text-center">Contacto</a>
-
-            </div>
-
-        </nav>
-
-    </header>
-
-
-
-    <main>
-
-        <!-- INICIO / HERO SECTION -->
-
-        <section id="inicio" class="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/000000/ffffff?text=Arte+en+la+Piel');">
-
-            <div class="absolute inset-0 bg-black/60"></div>
-
-            <div class="relative z-10 p-6">
-
-                <h1 class="text-4xl md:text-6xl font-black text-white uppercase tracking-wider">Tu Historia, Nuestro Arte</h1>
-
-                <p class="mt-4 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">Creamos tatuajes únicos con significado en el corazón de Bilbao. Desde diseños para antebrazo hasta piezas completas.</p>
-
-                <a href="#contacto" class="mt-8 inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-lg uppercase hover:bg-gray-200 transition-colors duration-300">Pide tu cita</a>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- SOBRE NOSOTROS -->
-
-        <section id="sobre-nosotros" class="py-20 bg-gray-900/50">
-
-            <div class="container mx-auto px-6">
-
-                <h2 class="section-title">Nuestros Artistas</h2>
-
-                <div class="text-center max-w-3xl mx-auto mb-12">
-
-                    <p class="text-lg">Somos Albena, Lina e Iker, un equipo de artistas apasionados por la tinta, con base en nuestra querida Bilbao. Cada uno de nosotros aporta un estilo único, pero compartimos la misma dedicación: transformar tus ideas en arte corporal que perdure. Nos enorgullece crear un ambiente acogedor y profesional donde te sientas seguro y entendido.</p>
-
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-                    <!-- Artista 1 -->
-
-                    <div class="card text-center">
-
-                        <img src="https://placehold.co/400x400/333333/ffffff?text=Albena" alt="Retrato de Albena, tatuadora" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-700">
-
-                        <h3 class="text-2xl font-bold text-white">Albena</h3>
-
-                        <p class="text-gray-400">Especialista en Blackwork y Dotwork</p>
-
-                    </div>
-
-                    <!-- Artista 2 -->
-
-                    <div class="card text-center">
-
-                        <img src="https://placehold.co/400x400/333333/ffffff?text=Lina" alt="Retrato de Lina, tatuadora" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-700">
-
-                        <h3 class="text-2xl font-bold text-white">Lina</h3>
-
-                        <p class="text-gray-400">Maestra del Color y Neotradicional</p>
-
-                    </div>
-
-                    <!-- Artista 3 -->
-
-                    <div class="card text-center">
-
-                        <img src="https://placehold.co/400x400/333333/ffffff?text=Iker" alt="Retrato de Iker, tatuador" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-gray-700">
-
-                        <h3 class="text-2xl font-bold text-white">Iker</h3>
-
-                        <p class="text-gray-400">Experto en Realismo y Retratos</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- BLOG -->
-
-        <section id="blog" class="py-20">
-
-            <div class="container mx-auto px-6">
-
-                <h2 class="section-title">Historia del Arte Corporal</h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-
-                    <article class="card">
-
-                        <h3 class="text-2xl font-bold mb-4 text-white">El Origen Milenario del Tatuaje</h3>
-
-                        <p class="text-gray-300">El tatuaje es una de las formas de arte más antiguas de la humanidad. La evidencia más antigua conocida se encontró en Ötzi, el "Hombre de Hielo", cuya momia de 5300 años de antigüedad presentaba más de 60 tatuajes. A lo largo de la historia, los tatuajes han servido como amuletos, símbolos de estatus, declaraciones de amor, signos de creencias religiosas, adornos e incluso como formas de castigo.</p>
-
-                    </article>
-
-                    <article class="card">
-
-                        <h3 class="text-2xl font-bold mb-4 text-white">El Piercing: Más que un Adorno</h3>
-
-                        <p class="text-gray-300">Al igual que los tatuajes, las perforaciones corporales tienen raíces ancestrales. Se han practicado en casi todas las culturas del mundo por diversas razones. Desde los faraones egipcios que se perforaban el ombligo como rito de realeza, hasta los guerreros romanos que usaban piercings en los pezones como señal de virilidad. Hoy en día, es una poderosa forma de autoexpresión y estética personal.</p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- FAQ -->
-
-        <section id="faq" class="py-20 bg-gray-900/50">
-
-            <div class="container mx-auto px-6 max-w-4xl">
-
-                <h2 class="section-title">Preguntas Frecuentes</h2>
-
-                <div class="space-y-4">
-
-                    <details class="card p-4 cursor-pointer">
-
-                        <summary class="font-bold text-lg text-white">¿Duele hacerse un tatuaje?</summary>
-
-                        <p class="mt-4 text-gray-300">La percepción del dolor es subjetiva y depende de la zona del cuerpo y de la tolerancia de cada persona. Zonas con más grasa o músculo (como el antebrazo o el muslo) suelen doler menos que zonas cercanas al hueso (costillas, tobillos). Nuestros artistas se aseguran de que el proceso sea lo más cómodo posible.</p>
-
-                    </details>
-
-                    <details class="card p-4 cursor-pointer">
-
-                        <summary class="font-bold text-lg text-white">¿Cuánto cuesta un tatuaje?</summary>
-
-                        <p class="mt-4 text-gray-300">El precio varía según el tamaño, la complejidad del diseño, los colores utilizados y el tiempo que requiera. Ofrecemos una consulta gratuita para discutir tu idea y darte un presupuesto cerrado sin compromiso.</p>
-
-                    </details>
-
-                    <details class="card p-4 cursor-pointer">
-
-                        <summary class="font-bold text-lg text-white">¿Qué cuidados necesita un tatuaje nuevo?</summary>
-
-                        <p class="mt-4 text-gray-300">Es crucial seguir las indicaciones de cuidado para una correcta cicatrización. Esto incluye mantenerlo limpio, hidratarlo con la crema recomendada y protegerlo del sol. Te proporcionaremos una guía detallada con todos los pasos a seguir después de tu sesión.</p>
-
-                    </details>
-
-                    <details class="card p-4 cursor-pointer">
-
-                        <summary class="font-bold text-lg text-white">¿Puedo tatuarme si soy menor de edad?</summary>
-
-                        <p class="mt-4 text-gray-300">No, en nuestro estudio solo tatuamos a personas mayores de 18 años, sin excepciones. Es una política estricta para garantizar la responsabilidad y madurez en la decisión.</p>
-
-                    </details>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- CONTACTO -->
-
-        <section id="contacto" class="py-20">
-
-            <div class="container mx-auto px-6">
-
-                <h2 class="section-title">Visítanos</h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-                    <div class="card">
-
-                        <h3 class="text-2xl font-bold mb-4 text-white">Información de Contacto</h3>
-
-                        <address class="not-italic space-y-4 text-gray-300">
-
-                            <p><strong>Dirección:</strong><br> Luis Power Kalea, 5, Deusto, 48014 Bilbao, Bizkaia</p>
-
-                            <p><strong>Teléfono:</strong><br> <a href="tel:688639609" class="text-white hover:underline">688 63 96 09</a></p>
-
-                            <p><strong>Horario:</strong><br> Mar - Sáb: 10:00 - 20:00<br> (Lunes y Domingo cerrado)</p>
-
-                            <p><strong>Provincia:</strong><br> Vizcaya</p>
-
-                        </address>
-
-                    </div>
-
-                    <div class="rounded-lg overflow-hidden shadow-lg h-96">
-
-                        <iframe
-
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.321443462477!2d-2.949989684515187!3d43.2666879791364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e5031b8a7f0e3%3A0x8a9f8b4e5f6d7e8!2sLuis%20Power%20Kalea%2C%205%2C%2048014%20Bilbo%2C%20Bizkaia!5e0!3m2!1ses!2ses!4v1678886432123!5m2!1ses!2ses"
-
-                            width="100%"
-
-                            height="100%"
-
-                            style="border:0;"
-
-                            allowfullscreen=""
-
-                            loading="lazy"
-
-                            referrerpolicy="no-referrer-when-downgrade"
-
-                            title="Mapa de ubicación del estudio de tatuajes en Bilbao">
-
-                        </iframe>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- FOOTER -->
-
-    <footer class="bg-gray-900 text-gray-400">
-
-        <div class="container mx-auto px-6 py-12">
-
-            <!-- Sección de políticas -->
-
-            <div id="politica-privacidad" class="mb-12 p-6 bg-gray-800 rounded-lg">
-
-                <h3 class="text-xl font-bold text-white mb-4">Información Legal Obligatoria</h3>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
-
-                    <div>
-
-                        <h4 class="font-bold text-white mb-2">Política de Privacidad</h4>
-
-                        <p>Este documento explica cómo recopilamos, usamos y protegemos tus datos personales. Es obligatorio por el RGPD para garantizar la transparencia y el control del usuario sobre su información.</p>
-
-                    </div>
-
-                    <div>
-
-                        <h4 class="font-bold text-white mb-2">Aviso Legal</h4>
-
-                        <p>Aquí se identifica al propietario de la web (nombre, CIF, domicilio) y se establecen las condiciones de uso del sitio. Es un requisito legal para cualquier actividad económica en línea.</p>
-
-                    </div>
-
-                    <div>
-
-                        <h4 class="font-bold text-white mb-2">Política de Cookies</h4>
-
-                        <p>Informa a los usuarios sobre las cookies que utiliza la web, su finalidad y cómo gestionarlas. La ley exige el consentimiento explícito del usuario antes de instalar la mayoría de las cookies.</p>
-
-                    </div>
-
-                </div>
-
-                 <div class="mt-4 text-center">
-
-                    <a href="#" class="text-sm hover:text-white underline">Leer Política de Privacidad completa</a> |
-
-                    <a href="#" class="text-sm hover:text-white underline">Leer Aviso Legal</a> |
-
-                    <a href="#" class="text-sm hover:text-white underline">Leer Política de Cookies</a>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="flex flex-col md:flex-row justify-between items-center">
-
-                <!-- Redes Sociales -->
-
-                <div class="flex space-x-6 mb-6 md:mb-0">
-
-                    <a href="#" aria-label="YouTube" class="hover:text-white transition-colors duration-300">
-
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.73,18.78 17.93,18.84C17.13,18.91 16.44,18.94 15.84,18.94L12,19C9.81,19 8.2,18.84 7.17,18.56C6.27,18.31 5.69,17.73 5.44,16.83C5.31,16.36 5.22,15.73 5.16,14.93C5.09,14.13 5.06,13.44 5.06,12.84L5,12C5,9.81 5.16,8.2 5.44,7.17C5.69,6.27 6.27,5.69 7.17,5.44C7.64,5.31 8.27,5.22 9.07,5.16C9.87,5.09 10.56,5.06 11.16,5.06L12,5C14.19,5 15.8,5.16 16.83,5.44C17.73,5.69 18.31,6.27 18.56,7.17Z" /></svg>
-
-                    </a>
-
-                    <a href="#" aria-label="Instagram" class="hover:text-white transition-colors duration-300">
-
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.2,5.2 0 0,1 16.2,21.4H7.8C4.6,21.4 2,18.8 2,15.6V7.8A5.2,5.2 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
-
-                    </a>
-
-                    <a href="#" aria-label="Facebook" class="hover:text-white transition-colors duration-300">
-
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.32 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" /></svg>
-
-                    </a>
-
-                    <a href="#" aria-label="TikTok" class="hover:text-white transition-colors duration-300">
-
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.53.02C13.17 0 13.8.22 14.32.64 14.84 1.06 15.2 1.68 15.34 2.34c.14.66.02 1.34-.36 1.9-.38.56-.92 1-1.54 1.22l-.1.04c-.62.22-1.28.26-1.9.12a2.9 2.9 0 0 1-1.6-1.1c-.44-.64-.64-1.4-.56-2.18.08-.78.42-1.5.94-2.04.52-.54 1.22-.86 1.96-.9.04 0 .1 0 .14-.02ZM16.68 2.88c.12.02.24.04.36.06.6.12 1.16.42 1.62.86.46.44.8 1 .98 1.62.18.62.2 1.28.06 1.9-.14.62-.44 1.2-.86 1.66s-.98 1.2-1.6 1.48l-.14.06c-.62.2-1.28.24-1.9.12a2.9 2.9 0 0 1-1.6-1.1c-.44-.64-.64-1.4-.56-2.18.08-.78.42-1.5.94-2.04.52-.54 1.22-.86 1.96-.9Z M21 6.28c.14.64.1 1.3-.1 1.92-.2.62-.54 1.2-.98 1.68-.44.48-.98.84-1.6 1.08-.62.24-1.28.3-1.92.18a3.1 3.1 0 0 1-1.7-1.16c-.44-.66-.64-1.44-.56-2.24a2.9 2.9 0 0 1 .96-2.08c.54-.54 1.24-.86 2-.9.08 0 .14 0 .22-.02.62-.1.12-.04.18-.06.64-.14 1.3-.1 1.92.1.62.2.12.54.16.98.44.44.48.98.84 1.6 1.08Z"/></svg>
-
-                    </a>
-
-                </div>
-
-                <!-- Métodos de pago -->
-
-                <div class="flex items-center space-x-4 mb-6 md:mb-0">
-
-                    <span class="text-sm">Aceptamos:</span>
-
-                    <!-- Visa -->
-
-                    <svg class="h-6" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.3 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.7 0 35 0Z" fill="#282828"/><path d="M28.2 18.2H31.6L27.1 6.8H23.7L20.2 18.2H23.5L24.3 16H27.4L28.2 18.2ZM25.8 14.2L26.4 10.7L27 14.2H25.8Z" fill="#fff"/><path d="M15.4 6.8L11.7 15.3L11.6 6.8H8.3L8.4 18.2H11.8L15.6 9.6L15.7 18.2H18.9L18.8 6.8H15.4Z" fill="#fff"/></svg>
-
-                    <!-- Mastercard -->
-
-                    <svg class="h-6" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.3 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.7 0 35 0Z" fill="#282828"/><circle cx="15" cy="12" r="7" fill="#EB001B"/><circle cx="23" cy="12" r="7" fill="#F79E1B"/><path d="M20 12C20 14.2 18.8 16.1 17 17.2C16.4 16.2 16 15.2 16 14C16 11.2 17.8 9 20 9C20 10 20 11 20 12Z" fill="#FF5F00"/></svg>
-
-                </div>
-
-            </div>
-
-            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
-
-                <p>&copy; <span id="year"></span> Tattoo Ink Bilbao. Todos los derechos reservados.</p>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-
-
-    <script>
-
-        // Script para el menú móvil
-
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-
-        const mobileMenu = document.getElementById('mobile-menu');
-
-
-
-        mobileMenuButton.addEventListener('click', () => {
-
-            mobileMenu.classList.toggle('hidden');
-
-        });
-
-
-
-        // Script para cerrar el menú al hacer clic en un enlace
-
-        const navLinks = document.querySelectorAll('#mobile-menu a');
-
-        navLinks.forEach(link => {
-
-            link.addEventListener('click', () => {
-
-                mobileMenu.classList.add('hidden');
-
-            });
-
-        });
-
-
-
-        // Actualizar año del copyright
-
-        document.getElementById('year').textContent = new Date().getFullYear();
-
-    </script>
-
+    <!-- HEADER -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-white">TITANIUM</a>
+                
+                <!-- Navegación para escritorio -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="nav-link bg-gray-700 text-white">Inicio</a>
+                    <a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </div>
+
+                <!-- Iconos -->
+                <div class="flex items-center space-x-4">
+                    <button aria-label="Buscar" class="text-gray-300 hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </button>
+                    <button aria-label="Cesta de la compra" class="text-gray-300 hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    </button>
+                    <button aria-label="Iniciar sesión" class="text-gray-300 hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </button>
+                    <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white" aria-label="Abrir menú">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Menú para móvil -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="index.html" class="block nav-link text-center bg-gray-700 text-white">Inicio</a>
+                <a href="sobre-nosotros.html" class="block nav-link text-center">Sobre Nosotros</a>
+                <a href="blog.html" class="block nav-link text-center">Blog</a>
+                <a href="faq.html" class="block nav-link text-center">FAQ</a>
+                <a href="contacto.html" class="block nav-link text-center">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INICIO / HERO SECTION -->
+        <section id="inicio" class="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/000000/ffffff?text=Arte+en+la+Piel');">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 p-6">
+                <h1 class="text-4xl md:text-6xl font-black text-white uppercase tracking-wider">Tu Historia, Nuestro Arte</h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">Creamos tatuajes únicos con significado en el corazón de Bilbao. Desde diseños para antebrazo hasta piezas completas.</p>
+                <a href="contacto.html" class="mt-8 inline-block bg-white text-gray-900 font-bold py-3 px-8 rounded-lg uppercase hover:bg-gray-200 transition-colors duration-300">Pide tu cita</a>
+            </div>
+        </section>
+
+        <!-- BANNER PROMOCIONAL -->
+        <section id="promo-banner" class="bg-yellow-400 text-gray-900">
+            <div class="container mx-auto px-6 py-4 text-center font-bold">
+                <p>✨ ¡Oferta de Verano! 15% de descuento en todos los tatuajes de temática floral. <a href="contacto.html" class="underline hover:text-black">¡Reserva ahora!</a></p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE ACCESO RÁPIDO -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Explora Nuestro Mundo</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="card">
+                        <h3 class="text-2xl font-bold text-white mb-3">Nuestros Artistas</h3>
+                        <p class="mb-4">Conoce al equipo de apasionados artistas detrás de cada obra de arte.</p>
+                        <a href="sobre-nosotros.html" class="font-bold text-white hover:underline">Saber más &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-2xl font-bold text-white mb-3">Galería de Trabajos</h3>
+                        <p class="mb-4">Inspírate con nuestros últimos tatuajes y piercings realizados en el estudio.</p>
+                        <a href="#" class="font-bold text-white hover:underline">Ver galería &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-2xl font-bold text-white mb-3">Preguntas Frecuentes</h3>
+                        <p class="mb-4">¿Tienes dudas? Resuelve aquí las preguntas más comunes de nuestros clientes.</p>
+                        <a href="faq.html" class="font-bold text-white hover:underline">Consultar FAQ &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-6 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="#" aria-label="YouTube" class="hover:text-white transition-colors duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.73,18.78 17.93,18.84C17.13,18.91 16.44,18.94 15.84,18.94L12,19C9.81,19 8.2,18.84 7.17,18.56C6.27,18.31 5.69,17.73 5.44,16.83C5.31,16.36 5.22,15.73 5.16,14.93C5.09,14.13 5.06,13.44 5.06,12.84L5,12C5,9.81 5.16,8.2 5.44,7.17C5.69,6.27 6.27,5.69 7.17,5.44C7.64,5.31 8.27,5.22 9.07,5.16C9.87,5.09 10.56,5.06 11.16,5.06L12,5C14.19,5 15.8,5.16 16.83,5.44C17.73,5.69 18.31,6.27 18.56,7.17Z" /></svg></a>
+                    <a href="#" aria-label="Instagram" class="hover:text-white transition-colors duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.2,5.2 0 0,1 16.2,21.4H7.8C4.6,21.4 2,18.8 2,15.6V7.8A5.2,5.2 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg></a>
+                    <a href="#" aria-label="Facebook" class="hover:text-white transition-colors duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.32 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" /></svg></a>
+                    <a href="#" aria-label="TikTok" class="hover:text-white transition-colors duration-300"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.53.02C13.17 0 13.8.22 14.32.64 14.84 1.06 15.2 1.68 15.34 2.34c.14.66.02 1.34-.36 1.9-.38.56-.92 1-1.54 1.22l-.1.04c-.62.22-1.28.26-1.9.12a2.9 2.9 0 0 1-1.6-1.1c-.44-.64-.64-1.4-.56-2.18.08-.78.42-1.5.94-2.04.52-.54 1.22-.86 1.96-.9.04 0 .1 0 .14-.02ZM16.68 2.88c.12.02.24.04.36.06.6.12 1.16.42 1.62.86.46.44.8 1 .98 1.62.18.62.2 1.28.06 1.9-.14.62-.44 1.2-.86 1.66s-.98 1.2-1.6 1.48l-.14.06c-.62.2-1.28.24-1.9.12a2.9 2.9 0 0 1-1.6-1.1c-.44-.64-.64-1.4-.56-2.18.08-.78.42-1.5.94-2.04.52-.54 1.22-.86 1.96-.9Z M21 6.28c.14.64.1 1.3-.1 1.92-.2.62-.54 1.2-.98 1.68-.44.48-.98.84-1.6 1.08-.62.24-1.28.3-1.92.18a3.1 3.1 0 0 1-1.7-1.16c-.44-.66-.64-1.44-.56-2.24a2.9 2.9 0 0 1 .96-2.08c.54-.54 1.24-.86 2-.9.08 0 .14 0 .22-.02.62-.1.12-.04.18-.06.64-.14 1.3-.1 1.92.1.62.2.12.54.16.98.44.44.48.98.84 1.6 1.08Z"/></svg></a>
+                </div>
+                <div class="flex items-center space-x-4 mb-6 md:mb-0">
+                    <span class="text-sm">Aceptamos:</span>
+                    <svg class="h-6" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.3 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.7 0 35 0Z" fill="#282828"/><path d="M28.2 18.2H31.6L27.1 6.8H23.7L20.2 18.2H23.5L24.3 16H27.4L28.2 18.2ZM25.8 14.2L26.4 10.7L27 14.2H25.8Z" fill="#fff"/><path d="M15.4 6.8L11.7 15.3L11.6 6.8H8.3L8.4 18.2H11.8L15.6 9.6L15.7 18.2H18.9L18.8 6.8H15.4Z" fill="#fff"/></svg>
+                    <svg class="h-6" viewBox="0 0 38 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.3 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.7 0 35 0Z" fill="#282828"/><circle cx="15" cy="12" r="7" fill="#EB001B"/><circle cx="23" cy="12" r="7" fill="#F79E1B"/><path d="M20 12C20 14.2 18.8 16.1 17 17.2C16.4 16.2 16 15.2 16 14C16 11.2 17.8 9 20 9C20 10 20 11 20 12Z" fill="#FF5F00"/></svg>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-sm">
+                <a href="#" class="hover:text-white underline">Política de Privacidad</a> |
+                <a href="#" class="hover:text-white underline">Aviso Legal</a> |
+                <a href="#" class="hover:text-white underline">Política de Cookies</a>
+                <p class="mt-4">&copy; <span id="year"></span> TITANIUM. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CHATBOT -->
+    <div id="chatbot-container">
+        <button id="chat-button" title="Abrir Chat" class="chat-bubble fixed bottom-5 right-5 h-16 w-16 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-900 z-40">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.828 8.828 0 01-4.32-1.142L2.24 17.76a.5.5 0 01-.64-.64l1.9-3.44A8.966 8.966 0 012 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.415 14.182A7.001 7.001 0 0010 15a7 7 0 007-7c0-2.922-2.23-5.43-5.185-6.182A7.003 7.003 0 004.415 14.182z" clip-rule="evenodd" /></svg>
+        </button>
+        <div id="chat-window" class="hidden fixed bottom-24 right-5 w-80 h-96 bg-gray-800 rounded-lg shadow-2xl flex-col z-40">
+            <div class="p-4 bg-gray-900 text-white flex justify-between items-center rounded-t-lg">
+                <h3 class="font-bold">Asistente Virtual</h3>
+                <button id="close-chat" title="Cerrar Chat" class="hover:text-gray-300">&times;</button>
+            </div>
+            <div class="flex-1 p-4 overflow-y-auto text-sm">
+                <div class="mb-3"><span class="bg-gray-700 p-2 rounded-lg inline-block">¡Hola! ¿Cómo puedo ayudarte hoy?</span></div>
+                <div class="mb-3 text-right"><span class="bg-white text-gray-900 p-2 rounded-lg inline-block">Quiero pedir una cita.</span></div>
+            </div>
+            <div class="p-2 border-t border-gray-700">
+                <input type="text" placeholder="Escribe tu mensaje..." class="w-full p-2 bg-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-white">
+            </div>
+        </div>
+    </div>
+
+    <!-- BANNER DE COOKIES -->
+    <div id="cookie-banner" class="hidden fixed bottom-0 left-0 right-0 bg-gray-900/95 p-4 z-50 transform translate-y-full">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+            <p>Utilizamos cookies para mejorar tu experiencia en nuestra web. Al continuar navegando, aceptas nuestro uso de cookies. <a href="#" class="underline hover:text-white">Leer más</a>.</p>
+            <button id="accept-cookies" class="bg-white text-gray-900 font-bold py-2 px-5 rounded-lg hover:bg-gray-200 whitespace-nowrap">Aceptar</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const cookieBanner = document.getElementById('cookie-banner');
+        const acceptCookiesButton = document.getElementById('accept-cookies');
+        if (!localStorage.getItem('cookiesAccepted')) {
+            cookieBanner.classList.remove('hidden');
+            setTimeout(() => { cookieBanner.style.transform = 'translateY(0)'; }, 100);
+        }
+        acceptCookiesButton.addEventListener('click', () => {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieBanner.style.transform = 'translateY(100%)';
+            setTimeout(() => { cookieBanner.classList.add('hidden'); }, 500);
+        });
+        const chatButton = document.getElementById('chat-button');
+        const chatWindow = document.getElementById('chat-window');
+        const closeChatButton = document.getElementById('close-chat');
+        chatButton.addEventListener('click', () => {
+            chatWindow.classList.remove('hidden');
+            chatWindow.classList.add('flex');
+        });
+        closeChatButton.addEventListener('click', () => {
+            chatWindow.classList.add('hidden');
+            chatWindow.classList.remove('flex');
+        });
+    </script>
 </body>
-
-</html> 
+</html>
