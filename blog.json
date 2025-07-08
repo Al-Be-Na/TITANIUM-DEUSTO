@@ -1,1 +1,57 @@
-
+{
+  "post": {
+    "id": "historia-del-tatuaje-01",
+    "title": "Historia del Tatuaje",
+    "subtitle": "Un Viaje a Través de la Tinta y el Tiempo",
+    "author": "TITANIUM DEUSTO",
+    "publicationDate": "2025-07-08",
+    "mainImageUrl": "https://placehold.co/800x400/1f2937/e5e7eb?text=Arte+Milenario",
+    "altText": "Ilustración abstracta sobre el arte del tatuaje",
+    "tags": ["historia", "tatuaje", "cultura", "arte"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "El arte de tatuar la piel es una de las formas de modificación corporal más antiguas y universales que existen. Lejos de ser una moda pasajera, sus raíces se hunden profundamente en la historia de la humanidad, con evidencias encontradas en diversas culturas de todo el mundo que demuestran su importancia ritual, social y terapéutica a lo largo de los siglos."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Los Primeros Trazos en la Piel"
+      },
+      {
+        "type": "paragraph",
+        "text": "La prueba más antigua y fascinante de tatuajes en un cuerpo humano fue descubierta en <strong>Ötzi, el \"Hombre de Hielo\"</strong>. Su momia, increíblemente conservada y datada del 3.300 a.C., reveló más de 60 tatuajes repartidos por su cuerpo. Estos no eran diseños complejos, sino simples líneas y cruces. Los investigadores creen que no tenían un propósito estético, sino más bien uno terapéutico o medicinal, ya que muchas de las marcas se encontraban en articulaciones y zonas propensas al dolor, sugiriendo una forma primitiva de acupuntura."
+      },
+      {
+        "type": "paragraph",
+        "text": "Culturas antiguas como la egipcia también practicaban el tatuaje, especialmente en mujeres, como se ha visto en momias que datan del Imperio Medio. Se cree que estos tatuajes estaban asociados a la fertilidad, la protección durante el parto y la devoción religiosa."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "De Símbolo Tribal a Marca de Marineros"
+      },
+      {
+        "type": "paragraph",
+        "text": "En las culturas polinesias, el tatuaje o <em>\"tatau\"</em> alcanzó un nivel de sofisticación artística y social sin precedentes. Los complejos diseños geométricos cubrían todo el cuerpo y contaban la historia de una persona: su linaje, su estatus social y sus logros personales. Era un rito de paso y un símbolo de identidad sagrado."
+      },
+      {
+        "type": "paragraph",
+        "text": "Fueron los marineros del siglo XVIII, como los de la expedición del Capitán James Cook, quienes reintrodujeron el tatuaje en Occidente tras sus viajes por el Pacífico. Para ellos, los tatuajes se convirtieron en amuletos de buena suerte, recuerdos de sus viajes y marcas de su valiente profesión."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "El Renacimiento Moderno del Tatuaje"
+      },
+      {
+        "type": "paragraph",
+        "text": "Tras un período en el que fue asociado a clases sociales bajas, marineros y presidiarios, el tatuaje experimentó un renacimiento en la segunda mitad del siglo XX. La contracultura de los años 60 y 70 lo adoptó como un símbolo de rebeldía y autoexpresión. Artistas como Sailor Jerry en Hawái y Lyle Tuttle en San Francisco revolucionaron las técnicas y los diseños, elevando el tatuaje a una nueva categoría artística."
+      },
+      {
+        "type": "paragraph",
+        "text": "Hoy en día, el tatuaje ha evolucionado hasta convertirse en una forma de arte respetada y una poderosa herramienta de expresión personal. En estudios como <strong>TITANIUM DEUSTO</strong>, celebramos esta rica herencia, combinando técnicas tradicionales con la tecnología más avanzada para crear obras de arte únicas en la piel. El tatuaje está libre de las connotaciones negativas del pasado y es celebrado por su belleza, su significado y la historia personal que cada diseño cuenta."
+      }
+    ]
+  }
+}
